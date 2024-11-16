@@ -39,3 +39,15 @@ $(document).ready(function () {
   showTestimonial(currentTestimonial);
   setInterval(nextTestimonial, 5000); // Auto-slide every 5 seconds
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const topbar = document.querySelector(".topbar");
+  const titlebarHeight = document.querySelector(".titlebar").offsetHeight;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > titlebarHeight) {
+      topbar.classList.add("fixed-top");
+    } else {
+      topbar.classList.remove("fixed-top");
+    }
+  });
+});
