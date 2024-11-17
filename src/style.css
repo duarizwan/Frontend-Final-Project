@@ -92,24 +92,7 @@ button:hover,
   color: #fff;
 }
 
-/* Footer */
-footer .map-container {
-  height: 150px;
-}
 
-footer .contact-info p a {
-  text-decoration: none;
-  color: var(--light-gray);
-  font-weight: bold;
-}
-
-footer .contact-info p a:hover {
-  text-decoration: underline;
-}
-
-.footer-container h4 {
-  margin-bottom: 30px;
-}
 
 /* Contact Section */
 .contact-section {
@@ -636,15 +619,7 @@ textarea {
   font-size: 1.2em;
 }
 
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2em;
-  width: 90%;
-}
+
 
 .logo-space {
   grid-column: span 4;
@@ -655,31 +630,9 @@ textarea {
   margin-bottom: 10px;
 }
 
-.footer-container img {
-  width: 25%;
-}
 
-/* Footer Bottom Section for Copyright */
-.footer-bottom {
-  background-color: #232323;
-  height: 3em;
-  text-align: center;
-  color: var(--secondary-color);
-  font-size: 0.9em;
-  padding-top: 0.7em;
-}
 
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 
-  .map-container {
-    grid-column: span 1;
-    height: 200px;
-  }
-}
 
 .quick-links {
   padding-left: 7em;
@@ -750,14 +703,4 @@ textarea {
   height: 10em;
   border-radius: 8px;
   overflow: hidden;
-}
-
-/* Footer Styling */
-footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
