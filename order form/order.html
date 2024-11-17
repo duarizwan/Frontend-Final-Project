@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+    <link rel="stylesheet" href="./order.css" />
+  </head>
+  <body>
+    <main>
+<div class="order-bg">
+      <div class="order">
+        <h1>Order Form</h1>
+        <form id="orderForm">
+          <!-- Personal Info Section -->
+          <h2>Personal Info</h2>
+
+          <label for="firstName">Name:</label>
+          <div class="form-group">
+            <div>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name" required
+              />
+              <div id="firstNameError" class="error-message"></div>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name" required
+              />
+              <div id="lastNameError" class="error-message"></div>
+            </div>
+          </div>
+
+          <label for="contactNumber">Contact Numbers:</label>
+          <div class="form-group">
+            <div>
+              <input
+                type="tel"
+                id="contactNumber"
+                name="contactNumber"
+                placeholder="Primary Contact" required
+              />
+              <div id="contactNumberError" class="error-message"></div>
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="alternateContact"
+                name="alternateContact"
+                placeholder="Alternate Contact"
+              />
+              <div id="alternateContactError" class="error-message"></div>
+            </div>
+          </div>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address" required
+          />
+          <div id="emailError" class="error-message"></div>
+
+          <label for="address">Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Enter Address, City, Country"
+            rows="3"
+          ></textarea>
+          <div id="addressError" class="error-message"></div>
+
+          <!-- Order Info Section -->
+          <h2>Order Info</h2>
+
+         
+
+<div id="dressTypeError" class="error-message"></div>
+          <label for="dressType">Type of Dress:</label>
+          <select id="dressType" name="dressType" required>
+            <option value="">Select a type</option>
+            <option value="Casual">Simple Suit</option>
+            <option value="Formal">Formal Suit</option>
+            <option value="Evening Gown">Suit with Dori Piping</option>
+            <option value="Lining Suit">Lining Suit</option>
+            <option value="Lining with Dori Piping">Lining with Dori Piping</option>
+            <option value="Party Wear">Party Wear</option>
+            <option value="Bridal Dress">Bridal Dress</option>
+            <option value="Saree">Saree</option>
+            <option value="Lehenga">Lehenga</option>
+            <option value="Salwar Kameez">Salwar Kameez</option>
+            <option value="Kurta">Kurta</option>
+            <option value="Simple Abaya">Simple Abaya</option>
+            <option value="Fancy Abaya">Fancy Abaya</option>
+            <option value="Kids' Clothing">Kids' Clothing</option>
+            <option value="Gowns">Gowns</option>
+            <option value="Jumpsuit">Jumpsuit</option>
+            <option value="Shirt">Shirt</option>
+            <option value="Trouser">Trouser</option>
+            <option value="Shrugs">Shrugs</option>
+            <option value="Tote Bags">Tote Bags</option>
+            <option value="others">others</option>
+          </select>
+          <div id="dressTypeError" class="error-message"></div>
+
+          <h2>Measurement Type</h2>
+  <label for="measurementType">Choose Measurement Type:</label>
+  <select id="measurementType" name="measurementType" required>
+    <option value="">Select</option>
+    <option value="top">Top</option>
+    <option value="bottom">Bottom</option>
+    <option value="both">Both</option>
+  </select>
+  <div id="measurementTypeError" class="error-message"></div>
+
+  <!-- Top Measurements -->
+  <div id="topMeasurements" class="measurement-section" style="display: none;">
+    <h3>Top Measurements</h3>
+    <label for="shoulder">Shoulder Size:</label>
+    <input type="number" id="shoulder" name="shoulder" placeholder="Enter Shoulder Size" />
+    <div id="shoulderError" class="error-message"></div>
+
+    <label for="sleeveLength">Sleeve Length:</label>
+    <input type="number" id="sleeveLength" name="sleeveLength" placeholder="Enter Sleeve Length" />
+    <div id="sleeveLengthError" class="error-message"></div>
+
+    <label for="chestWidth">Chest Width:</label>
+    <input type="number" id="chestWidth" name="chestWidth" placeholder="Enter Chest Width" />
+    <div id="chestWidthError" class="error-message"></div>
+
+    <label for="neckMeasurement">Neck Measurement:</label>
+    <input type="number" id="neckMeasurement" name="neckMeasurement" placeholder="Enter Neck Measurement" />
+    <div id="neckMeasurementError" class="error-message"></div>
+  </div>
+
+  <!-- Bottom Measurements -->
+  <div id="bottomMeasurements" class="measurement-section" style="display: none;">
+    <h3>Bottom Measurements</h3>
+    <label for="waistMeasurement">Waist Measurement:</label>
+    <input type="number" id="waistMeasurement" name="waistMeasurement" placeholder="Enter Waist Measurement" />
+    <div id="waistMeasurementError" class="error-message"></div>
+
+    <label for="hipMeasurement">Hip Measurement:</label>
+    <input type="number" id="hipMeasurement" name="hipMeasurement" placeholder="Enter Hip Measurement" />
+    <div id="hipMeasurementError" class="error-message"></div>
+
+    <label for="bottomLength">Bottom Length:</label>
+    <input type="number" id="bottomLength" name="bottomLength" placeholder="Enter Bottom Length" />
+    <div id="bottomLengthError" class="error-message"></div>
+  </div>
+
+
+          <!-- Sample Option -->
+          <div class="radio-group">
+            <div>
+              <label>Sample:</label>
+              <label
+                ><input type="radio" name="sample" value="yes" /> Yes</label
+              >
+              <label><input type="radio" name="sample" value="no" /> No</label>
+              <div id="radio" class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Delivery Option -->
+          <div class="radio-group">
+            <div>
+              <label
+                ><input type="radio" name="delivery" value="delivery" />
+                Delivery</label
+              >
+              <label
+                ><input type="radio" name="delivery" value="pickup" />
+                Pickup</label
+              >
+              <div id="radio" class="error-message"></div>
+            </div>
+          </div>
+
+          <!-- Delivery Date & Time -->
+          <div class="calendar-group">
+            <label for="deliveryDateTime">Delivery Date & Time:</label>
+            <input
+              type="datetime-local"
+              id="deliveryDateTime"
+              name="deliveryDateTime"
+            />
+            <div id="deliveryDateTime" class="error-message"></div>
+          </div>
+
+          <button id="submitButton" type="submit">Submit</button>
+        </form>
+      </div>
+      </div>
+    </main>
+    <script src="./order.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+      <main id="wrap">
+      <div class="containerContact">
+          <div class="left-section">
+              <div class="form-wrapper">
+                  <img src="../Landing media/gallery/Stitches by Q. logo/pixelcut-export.png" alt="Stitches by Q Logo" class="logoContact">
+  
+                  <div class="form-content">
+                      <h2>Contact Us</h2>
+                      <form id="contactForm" action="submit_contact.php" method="post">
+                          <div class="input-group">
+                              <input type="text" id="name" name="name" placeholder="Name" required>
+                          </div>
+                          <div class="input-group">
+                              <input type="email" id="email" name="email" placeholder="Email" required>
+                          </div>
+                          <div class="input-group">
+                              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                          </div>
+                          <div class="input-group">
+                              <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                          </div>
+                          <button type="submit" class="submit-btn">Send Message</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="right-section">
+              <img src="./contact img/contact img2.jpg" alt="measurement" class="background-image">
+          </div>
+      </div>
+  </main>
+<script src="formValidation.js"></script>
+
+</body>
+</html>

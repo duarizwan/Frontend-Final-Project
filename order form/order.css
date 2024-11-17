@@ -1,0 +1,141 @@
+* {
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+padding: 3em 0em;
+  background-image: url("./contact\ img.jpg"); 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  font-size: 0.9em;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.form-group div {
+  flex: 1;
+}
+
+select,
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radio-group div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-group label {
+  font-size: 0.9em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0;
+}
+
+.calendar-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.calendar-group input[type="datetime-local"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #777;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.error-input {
+  border: 2px solid red;
+}

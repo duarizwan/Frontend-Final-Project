@@ -51,3 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
+/* footer year */
+  document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("currentYear");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  });
+
