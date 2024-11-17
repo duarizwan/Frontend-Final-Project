@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+.landing {
+  background: url("../../assets/gallery/bg-with-overlay.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .hero {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text;
+
+    h1 {
+      font-size: 5em;
+      font-weight: bolder;
+      background: linear-gradient(to bottom, $accent, transparentize($background, 0.15));
+    }
+
+    p {
+      font-size: 2em;
+      margin-bottom: 1em;
+      background: linear-gradient(to top, $accent, transparentize($background, 0.15));
+    }
+
+    h1,
+    p {
+      padding: 0.3em;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0.5em 0.8em;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      border-radius: 2rem;
+
+      // Default state
+      background-color: $background;
+      color: $text;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

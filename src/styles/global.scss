@@ -1,0 +1,107 @@
+@import "variables.scss";
+@import "reset.scss";
+
+html,
+body {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: transparentize($background, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.2em 0.5em;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+
+      li {
+        &:last-child a {
+          background-color: $accent;
+          color: $text;
+
+          &:hover {
+            background-color: $accent;
+            color: $text;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $text;
+          padding: 0.5em 0.8em;
+          font-size: $font-medium;
+          transition: background-color 0.3s ease, color 0.3s ease;
+          border-radius: 2rem;
+
+          // Default state
+          background-color: transparent;
+
+          &:hover {
+            background-color: $text;
+            color: $background;
+          }
+        }
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 4em;
+        margin-right: 0.9em;
+      }
+    }
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  background-color: #25d366;
+  padding: 0.7rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  z-index: 9999;
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparentize(#075e54, 0.4);
+  will-change: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+  }
+
+  svg {
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
+}
