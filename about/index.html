@@ -18,75 +18,163 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- import gloal.css -->
+    <link rel="stylesheet" href="../src/styles/global.css" />
     <link rel="stylesheet" href="./about.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>About Us</h1>
-          <p class="hero-para">Celebrating Craftsmanship and Empowering Dreams</p>
-          <a href="../order form/order.html">Place Order</a>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <a href="/">
+            <img loading="eager" src="/assets/gallery/logo/white-full.png" alt="Stitches by Q Logo" />
+          </a>
         </div>
-      </div>
-    </section>
 
-    <!-- Our Journey -->
-    <section class="about-section">
-      <div class="container">
-        <h2 id="story-h2">Our Journey</h2>
-        <div class="story-content">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Our Services</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li>
+            <a href="/contact/">Contact</a>
+          </li>
+          <li>
+            <a href="/order/">Place Order</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>About Us</h1>
+            <p class="hero-para">Celebrating Craftsmanship and Empowering Dreams</p>
+            <a href="/order">Place Order</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Journey -->
+      <section class="about-section">
+        <div class="container">
+          <h2 id="story-h2">Our Journey</h2>
+          <div class="story-content">
+            <p>
+              What began as a small workshop has flourished into a symbol of exceptional craftsmanship and artistry.
+              <strong>Stitches by Q.</strong> is a tailoring business with over 20 years of experience in stitching and
+              custom tailoring. However, the business lacks an online presence, which hinders its growth. We are here to
+              serve you with exceptional tailoring services and to reach a wider audience through our accessible and
+              user-friendly website
+            </p>
+
+            <img src="./about media/our story.jpg" alt="Our story" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission -->
+      <section class="mission-section">
+        <div class="container">
+          <h2 id="mission-h2">Our Mission</h2>
+          <div class="mission-content">
+            <p id="mission-para">
+              We aim to bridge the gap between tradition and technology. Our mission is to provide seamless stitching
+              services while empowering skilled women tailors. By blending innovation and heritage, we deliver
+              premium-quality tailoring to our valued customers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision -->
+      <section class="vision-section">
+        <div class="container">
+          <h2 id="vision-h2">Our Vision</h2>
+          <div class="vision-content">
+            <img src="./about media/our vision.jpg" alt="Our vision" />
+            <p>
+              We envision a world where fashion is sustainable and empowering. Our vision drives us to craft tailored
+              creations that exude individuality and inspire confidence. Let us make your dream designs a reality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section">
+        <div class="cta-container">
+          <h2 class="cta-h2">Join Our Community</h2>
+          <p class="cta-para">
+            Ready to experience custom-tailored perfection? Explore our services or place an order today!
+          </p>
+          <a href="/services" class="cta-button">Explore Services</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-space">
+          <h2>
+            <a href="index.html">
+              <img src="/assets/gallery/logo/white-full.png" alt="Stitches by Q Logo" />
+            </a>
+          </h2>
+        </div>
+
+        <div class="contact-form">
+          <h4>Contact Us</h4>
+          <p>Stay connected for quick responses. Provide your email for immediate assistance.</p>
+          <form action="/submit-email" method="post">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Contact</button>
+          </form>
+        </div>
+
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Place an Order</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="./Contact/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-info">
+          <h4>Reach Out to Us</h4>
           <p>
-            What began as a small workshop has flourished into a symbol of exceptional craftsmanship and artistry.
-            <strong>Stitches by Q.</strong> is a tailoring business with over 20 years of experience in stitching and
-            custom tailoring. However, the business lacks an online presence, which hinders its growth. We are here to
-            serve you with exceptional tailoring services and to reach a wider audience through our accessible and
-            user-friendly website
+            <i class="fas fa-map-marker-alt"></i
+            ><a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener noreferrer"
+              >House 1, Block 1, Model Colony, Moinabad, Karachi</a
+            >
           </p>
+          <p><i class="fas fa-phone-alt"></i><a href="tel:+923123615522"> +92-312-3615522</a></p>
+          <p><i class="fas fa-envelope"></i><a href="mailto:stitchesbyq@gmail.com">stitchesbyq@gmail.com</a></p>
+          <p><i class="fas fa-clock"></i> 9 AM - 9 PM</p>
+        </div>
 
-          <img src="./about media/our story.jpg" alt="Our story" />
+        <!-- Google Map Embed -->
+        <div class="map-container">
+          <iframe
+            title="Stitches by Q Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.558284213234!2d67.11531797400985!3d24.8977743791316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eafa5a4d4c7%3A0x2c4b4c89ff68b7e7!2sModel%20Colony%2C%20Karachi%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1603629984048!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
-    </section>
 
-    <!-- Mission -->
-    <section class="mission-section">
-      <div class="container">
-        <h2 id="mission-h2">Our Mission</h2>
-        <div class="mission-content">
-          <p id="mission-para">
-            We aim to bridge the gap between tradition and technology. Our mission is to provide seamless stitching
-            services while empowering skilled women tailors. By blending innovation and heritage, we deliver
-            premium-quality tailoring to our valued customers.
-          </p>
-        </div>
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Stitches by Q. All Rights Reserved.</p>
       </div>
-    </section>
-
-    <!-- Vision -->
-    <section class="vision-section">
-      <div class="container">
-        <h2 id="vision-h2">Our Vision</h2>
-        <div class="vision-content">
-          <img src="./about media/our vision.jpg" alt="Our vision" />
-          <p>
-            We envision a world where fashion is sustainable and empowering. Our vision drives us to craft tailored
-            creations that exude individuality and inspire confidence. Let us make your dream designs a reality.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section">
-      <div class="cta-container">
-        <h2 class="cta-h2">Join Our Community</h2>
-        <p class="cta-para">
-          Ready to experience custom-tailored perfection? Explore our services or place an order today!
-        </p>
-        <a href="services.html" class="cta-button">Explore Services</a>
-      </div>
-    </section>
+    </footer>
   </body>
 </html>

@@ -17,7 +17,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./src/styles/global.css" />
     <link rel="stylesheet" href="./src/styles/home.css" />
   </head>
@@ -25,20 +24,20 @@
     <header>
       <nav class="nav">
         <div class="logo">
-          <a href="index.html">
-            <img src="./assets/gallery/logo/white-full.png" alt="Stitches by Q Logo" />
+          <a href="/">
+            <img loading="eager" src="/assets/gallery/logo/white-full.png" alt="Stitches by Q Logo" />
           </a>
         </div>
 
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="./about/index.html">About Us</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Our Services</a></li>
+          <li><a href="/about/">About Us</a></li>
           <li>
-            <a href="./contact/index.html">Contact</a>
+            <a href="/contact/">Contact</a>
           </li>
           <li>
-            <a href="./order/index.html">Place Order</a>
+            <a href="/order/">Place Order</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +48,7 @@
         <div class="hero">
           <h1>ONLINE STITCHING SERVICE</h1>
           <p class="tagline">Empowering Women Through Quality Stitching</p>
-          <a href="./order/index.html" class="btn1">Place Order</a>
+          <a href="./order/" class="btn1">Place Order</a>
         </div>
       </section>
 
@@ -57,84 +56,74 @@
         <h2 class="bgwhite">Our Top-Notch Stitching Services</h2>
         <div class="card-container">
           <div class="card">
-            <img src="./assets/gallery/pexels-manishjangid-28943579.jpg" alt="Saree Dresses" />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/gallery/pexels-manishjangid-28943579.jpg"
+              alt="Saree Dresses"
+            />
             <h3>Saree</h3>
             <p>Elegant sarees, tailored for sophistication and style.</p>
             <a href="#" class="card-button">Explore</a>
           </div>
           <div class="card">
-            <img src="./assets/gallery/Bridal.jpg" alt="Bridal Dresses" />
+            <img loading="lazy" decoding="async" src="/assets/gallery/Bridal.jpg" alt="Bridal Dresses" />
             <h3>Bridal</h3>
             <p>Perfectly tailored bridal wear to make your day unforgettable.</p>
             <a href="#" class="card-button">Explore</a>
           </div>
           <div class="card">
-            <img src="./assets/gallery/Frocks.jpg" alt="Frocks" />
+            <img loading="lazy" decoding="async" src="/assets/gallery/Frocks.jpg" alt="Frocks" />
             <h3>Frocks</h3>
             <p>Stylish frocks for all occasions, crafted with care.</p>
             <a href="#" class="card-button">Explore</a>
           </div>
         </div>
       </section>
-      <section class="testimonials-section">
-        <div class="testimonials-overlay">
-          <h2>What Our Clients Say</h2>
-          <div class="testimonial-slider">
-            <div class="testimonial active">
-              <p class="quotation-mark">“</p>
-              <p class="testimonial-text">
-                "Stitches by Q exceeded my expectations! The quality and attention to detail are incredible. Highly
-                recommended!"
-              </p>
-              <p class="testimonial-author">– Nabiha Abid.</p>
-              <p class="quotation-mark">”</p>
-            </div>
-            <div class="testimonial">
-              <p class="quotation-mark">“</p>
-              <p class="testimonial-text">
-                "Amazing service and beautiful stitching! I received so many compliments on my gown."
-              </p>
-              <p class="testimonial-author">– Maryam K.</p>
-              <p class="quotation-mark">”</p>
-            </div>
-            <div class="testimonial">
-              <p class="quotation-mark">“</p>
-              <p class="testimonial-text">
-                "Professional and efficient. I’ll definitely be returning for my future stitching needs."
-              </p>
-              <p class="testimonial-author">– Dua Rizwan.</p>
-              <p class="quotation-mark">”</p>
-            </div>
-            <div class="testimonial">
-              <p class="quotation-mark">“</p>
-              <p class="testimonial-text">
-                "Their customer service is outstanding, and the stitching quality is unmatched. Love it!"
-              </p>
-              <p class="testimonial-author">– Ayesha R.</p>
-              <p class="quotation-mark">”</p>
-            </div>
-            <div class="testimonial">
-              <p class="quotation-mark">“</p>
-              <p class="testimonial-text">
-                "Truly a wonderful experience! They made my wedding gown exactly as I imagined."
-              </p>
-              <p class="testimonial-author">– Unaiza Tariq.</p>
-              <p class="quotation-mark">”</p>
-            </div>
-          </div>
-          <div class="slider-controls">
-            <span class="control-dot active" data-slide="0"></span>
-            <span class="control-dot" data-slide="1"></span>
-            <span class="control-dot" data-slide="2"></span>
-            <span class="control-dot" data-slide="3"></span>
-            <span class="control-dot" data-slide="4"></span>
+
+      <section class="testimonial-section">
+        <div class="testimonial-image">
+          <img src="/assets/gallery/Bridal.jpg" alt="Client testimonial image" />
+        </div>
+        <div class="testimonial-content">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">
+            Stitches by Q exceeded my expectations! The quality and attention to detail are incredible. Highly
+            recommended!"
+          </p>
+          <p class="client-name">Nabiha Abid</p>
+          <div class="navigation">
+            <button class="nav-button prev" aria-label="Previous testimonial">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <button class="nav-button next" aria-label="Next testimonial">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
+
       <section class="info-section">
         <div class="info-container">
           <div class="info-image">
-            <img src="./assets/gallery/info img.jpg" alt="Stitching Process" />
+            <img loading="lazy" src="/assets/gallery/info img.jpg" alt="Stitching Process" />
           </div>
           <div class="info-content">
             <h2>Experience Quality Stitching Services with Stitches by Q</h2>
@@ -151,89 +140,123 @@
           </div>
         </div>
       </section>
+
       <section class="why-choose-us">
         <div class="why-choose-content">
-          <h2>Why Choose Us</h2>
-          <p>We bring experience, quality, and dedication to every stitch.</p>
+          <h2 class="section-title">Why Choose Us</h2>
+          <p class="section-description">We bring experience, quality, and dedication to every stitch.</p>
           <div class="usp-list">
             <div class="usp-item">
-              <h3>Experienced Tailors</h3>
-              <p>Our team consists of skilled tailors with years of experience in the art of stitching.</p>
               <i class="fa-solid fa-user-check usp-icon"></i>
-              <!-- Add appropriate icons -->
+              <div class="usp-text">
+                <h3>Experienced Tailors</h3>
+                <p>Our team consists of skilled tailors with years of experience in the art of stitching.</p>
+              </div>
             </div>
             <div class="usp-item">
-              <h3>Custom Fitting</h3>
-              <p>Each garment is tailored to fit you perfectly, ensuring comfort and style.</p>
               <i class="fa-solid fa-ruler-combined usp-icon"></i>
+              <div class="usp-text">
+                <h3>Custom Fitting</h3>
+                <p>Each garment is tailored to fit you perfectly, ensuring comfort and style.</p>
+              </div>
             </div>
             <div class="usp-item">
-              <h3>High-Quality Fabrics</h3>
-              <p>We use only premium fabrics, ensuring durability and elegance in every piece.</p>
               <i class="fa-solid fa-star usp-icon"></i>
+              <div class="usp-text">
+                <h3>High-Quality Fabrics</h3>
+                <p>We use only premium fabrics, ensuring durability and elegance in every piece.</p>
+              </div>
             </div>
             <div class="usp-item">
-              <h3>Affordable Pricing</h3>
-              <p>We offer high-quality services at prices that fit your budget.</p>
               <i class="fa-solid fa-tags usp-icon"></i>
+              <div class="usp-text">
+                <h3>Affordable Pricing</h3>
+                <p>We offer high-quality services at prices that fit your budget.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="faq-section" id="faq">
         <div class="faq-container">
-          <h2 class="bgblack">Frequently Asked Questions</h2>
-          <div class="faq">
-            <div class="faq-question">What services do you offer? <span class="plus-icon">+</span></div>
-            <p class="faq-answer">
-              We offer custom tailoring services, including stitching for gowns, sarees, lehengas, abayas, and frocks.
-              You can place both individual and bulk orders with us.
-            </p>
-          </div>
-          <div class="faq">
-            <div class="faq-question">
-              How long does it take to complete an order?
-              <span class="plus-icon">+</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">Here are the answers to some of the most common questions we get.</p>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+                <span>What services do you offer?</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We offer custom tailoring services, including stitching for gowns, sarees, lehengas, abayas, and
+                  frocks. You can place both individual and bulk orders with us.
+                </p>
+              </div>
             </div>
-            <p class="faq-answer">
-              Our standard turnaround time is 7-14 days, depending on the complexity of the design. For urgent orders,
-              please contact us directly.
-            </p>
-          </div>
-          <div class="faq">
-            <div class="faq-question">
-              Do you provide fabric or should I bring my own?
-              <span class="plus-icon">+</span>
+            <div class="faq-item">
+              <button class="faq-question">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+                <span>How long does it take to complete an order?</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our standard turnaround time is 7-14 days, depending on the complexity of the design. For urgent
+                  orders, please contact us directly.
+                </p>
+              </div>
             </div>
-            <p class="faq-answer">
-              We can source fabric upon request, but you’re welcome to bring your own fabric. We’re happy to advise you
-              on suitable materials for your design.
-            </p>
-          </div>
-          <div class="faq">
-            <div class="faq-question">What are your prices? <span class="plus-icon">+</span></div>
-            <p class="faq-answer">
-              Our prices vary depending on the type of garment and complexity of the design. Contact us for a detailed
-              price list or a custom quote.
-            </p>
-          </div>
-          <div class="faq">
-            <div class="faq-question">How do I place an order? <span class="plus-icon">+</span></div>
-            <p class="faq-answer">
-              You can place an order through our "Order Now" form, or contact us directly via phone or email. We’ll
-              guide you through the process.
-            </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+                <span>Do you provide fabric or should I bring my own?</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We can source fabric upon request, but you’re welcome to bring your own fabric. We’re happy to advise
+                  you on suitable materials for your design.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+                <span>What are your prices?</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our prices vary depending on the type of garment and complexity of the design. Contact us for a
+                  detailed price list or a custom quote.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+                <span>How do I place an order?</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  You can place an order through our "Order Now" form, or contact us directly via phone or email. We’ll
+                  guide you through the process.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="contact-section">
         <div class="contact-container">
-          <h2>Contact Us</h2>
-          <p>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-description">
             Have questions or ready to start your custom order? We’d love to hear from you! Reach out and we’ll get back
             to you as soon as possible.
           </p>
-          <form action="/contact-us" method="get">
+
+          <form action="/contact-us" method="get" class="contact-form">
             <div class="form-group">
               <input type="text" name="name" placeholder="Your Name" required />
             </div>
@@ -245,33 +268,36 @@
             </div>
             <button type="submit" class="contact-btn">Get in Touch</button>
           </form>
+
           <p class="direct-link">
             Or you can visit our
-            <a href="./contact/index.html">Contact Us</a> page for more details.
+            <a href="./contact/">Contact Us</a> page for more details.
           </p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="logo-space">
           <h2>
             <a href="index.html">
-              <img src="./assets/gallery/For black bg/pixelcut-export.png" alt="Stitches by Q Logo" />
+              <img src="/assets/gallery/logo/white-full.png" alt="Stitches by Q Logo" />
             </a>
           </h2>
         </div>
+
         <div class="contact-form">
-          <h4>FREQUENTLY CONTACT US</h4>
+          <h4>Contact Us</h4>
           <p>Stay connected for quick responses. Provide your email for immediate assistance.</p>
-          <form>
+          <form action="/submit-email" method="post">
             <input type="email" placeholder="Enter your email" required />
             <button type="submit">Contact</button>
           </form>
         </div>
+
         <div class="quick-links">
-          <h4>QUICK LINKS</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="#">Services</a></li>
             <li><a href="#">Place an Order</a></li>
@@ -279,17 +305,20 @@
             <li><a href="./Contact/contact.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="contact-info">
-          <h4>REACH OUT TO US</h4>
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            <a href="https://goo.gl/maps/xyz" target="_blank">House 1, Block 1, Model Colony, Moinabad, Karachi</a>
-          </p>
 
+        <div class="contact-info">
+          <h4>Reach Out to Us</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i
+            ><a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener noreferrer"
+              >House 1, Block 1, Model Colony, Moinabad, Karachi</a
+            >
+          </p>
           <p><i class="fas fa-phone-alt"></i><a href="tel:+923123615522"> +92-312-3615522</a></p>
           <p><i class="fas fa-envelope"></i><a href="mailto:stitchesbyq@gmail.com">stitchesbyq@gmail.com</a></p>
           <p><i class="fas fa-clock"></i> 9 AM - 9 PM</p>
         </div>
+
         <!-- Google Map Embed -->
         <div class="map-container">
           <iframe
@@ -300,10 +329,11 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </div>
+
+      <!-- Footer Bottom Section -->
       <div class="footer-bottom">
         <p>&copy; <span id="currentYear"></span> Stitches by Q. All Rights Reserved.</p>
       </div>
@@ -319,7 +349,7 @@
         </svg>
       </a>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/src/js/script.js"></script>
+    <script src="/src/js/home.js" defer></script>
+    <script src="/src/js/script.js" defer></script>
   </body>
 </html>

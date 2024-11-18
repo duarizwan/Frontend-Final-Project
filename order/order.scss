@@ -1,0 +1,162 @@
+@import "../src/styles/variables";
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+// Form Styles
+.order-bg {
+  padding: 2rem;
+  padding-top: 8rem;
+  border-radius: 10px;
+  max-width: 50rem;
+  width: 100%;
+
+  .order {
+    background-color: $background;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    color: $accent;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $text;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: $text;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    color: $text;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid $accent;
+    border-radius: 5px;
+    background-color: #2c2a29;
+    color: $text;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+      background-color: #3a3837;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      flex: 1;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .measurement-section {
+    display: none;
+
+    input[type="number"] {
+      width: 100%;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .error-input {
+    border-color: red;
+    background-color: #3a3837;
+  }
+
+  .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    label {
+      margin-right: 15px;
+      color: $text;
+    }
+  }
+
+  .calendar-group {
+    margin-bottom: 15px;
+
+    input[type="datetime-local"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid $accent;
+      border-radius: 5px;
+      background-color: #2c2a29;
+      color: $text;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: $accent;
+        background-color: #3a3837;
+      }
+    }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: $accent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+}
