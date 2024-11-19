@@ -1,0 +1,35 @@
+$text: #e9e6e4;
+$background: #14100d;
+$primary: #6f4532;
+$secondary: #744830;
+$accent: #ff6f61;
+$hover-color: darken($accent, 10%);
+
+/* Footer Styling */
+$footer-bg: #1c1c1c;
+$button-bg: $accent;
+$button-hover-bg: darken($accent, 10%);
+$footer-border: #333;
+$input-border-color: $footer-border;
+$input-focus-border-color: $accent;
+$button-border-radius: 5px;
+
+// box shadow based on $background
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.2);
+$shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+// font sizes
+$font-small: 0.8em;
+$font-medium: 1em;
+$font-large: 1.2em;
+$font-xlarge: 1.5em;
+$font-xxlarge: 2em;
+
+// headings
+$heading-1: 3em;
+$heading-2: 2.5em;
+$heading-3: 2em;
+$heading-4: 1.5em;
+$heading-5: 1.2em;
+$heading-6: 1em;

@@ -1,0 +1,226 @@
+// Color Variables
+@import "../src/styles/variables";
+
+// Hero Section (Full screen)
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("./about media/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); // Dark overlay
+
+  .hero-container {
+    max-width: 1100px;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: $text;
+    }
+
+    .hero-para {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      color: $text;
+      font-weight: 300;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 18px 40px;
+      background-color: $accent;
+      color: $text;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 1.1rem;
+
+      &:hover {
+        background-color: $hover-color;
+        transform: translateY(-5px); // Subtle hover effect
+      }
+    }
+  }
+}
+
+// About Section (Our Journey)
+.about-section {
+  padding: 80px 20px;
+  background-color: $secondary;
+  color: $text;
+
+  #story-h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: $text;
+    font-weight: 600;
+  }
+
+  .story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $text;
+      margin-bottom: 40px;
+      max-width: 900px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// Mission Section
+.mission-section {
+  padding: 80px 20px;
+  background-color: $primary;
+  color: $text;
+
+  #mission-h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: $text;
+    font-weight: 600;
+  }
+
+  .mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $text;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// Vision Section (With Image)
+.vision-section {
+  color: $background;
+  padding: 80px 20px;
+  background-image: url("/assets/about/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .vision-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  #vision-h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: $text;
+    font-weight: 600;
+  }
+
+  .vision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $text;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
+}
+
+// Call to Action Section
+.cta-section {
+  background-color: $accent;
+  padding: 80px 20px;
+  text-align: center;
+  color: $text;
+
+  .cta-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .cta-h2 {
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .cta-para {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      text-decoration: none;
+      padding: 18px 40px;
+      background-color: $primary;
+      color: $text;
+      font-weight: 600;
+      border-radius: 50px;
+      text-transform: uppercase;
+      transition: background-color 0.3s, transform 0.2s ease;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

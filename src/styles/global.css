@@ -1,0 +1,334 @@
+/* Footer Styling */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+html,
+body {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  color: #14100d;
+  background-color: #e9e6e4;
+}
+
+section:not(:first-child) {
+  margin-top: 6rem;
+}
+
+header {
+  background-color: rgba(20, 16, 13, 0.85);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.2em 0.5em;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+header nav ul li:last-child a {
+  background-color: #ff6f61;
+  color: #14100d;
+}
+header nav ul li:last-child a:hover {
+  background-color: #ff412e;
+  color: #14100d;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #e9e6e4;
+  padding: 0.5em 0.8em;
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+header nav ul li a:hover {
+  background-color: #e9e6e4;
+  color: #14100d;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img {
+  height: 4em;
+  margin-right: 0.9em;
+}
+
+.footer {
+  margin-top: 8rem;
+  background-color: #1c1c1c;
+  color: #e9e6e4;
+  padding-top: 8rem;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: flex-start;
+  max-width: 80rem;
+  padding-bottom: 4rem;
+  margin: 0 auto;
+}
+.footer h4 {
+  font-size: 1.25rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.footer a {
+  color: #e9e6e4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #ff6f61;
+}
+.footer .logo-space {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer .logo-space img {
+  max-width: 200px;
+  height: auto;
+}
+.footer .contact-form {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.footer .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .contact-form form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #e9e6e4;
+  transition: border 0.3s ease;
+}
+.footer .contact-form form input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+.footer .contact-form form button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.footer .contact-form form button:hover {
+  background-color: #ff412e;
+}
+.footer .quick-links {
+  margin-bottom: 20px;
+}
+.footer .quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .quick-links ul li {
+  margin-bottom: 8px;
+}
+.footer .contact-info {
+  margin-bottom: 20px;
+}
+.footer .contact-info i {
+  color: #ff6f61;
+  margin-right: 10px;
+}
+.footer .map-container {
+  flex: 1;
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.footer .map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+.footer .footer-bottom {
+  padding: 10px 0;
+  background-color: #ff6e60;
+  color: #e9e6e4;
+  text-align: center;
+  font-size: 0.8em;
+}
+.footer .footer-bottom p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.whatsapp {
+  position: fixed;
+  background-color: #25d366;
+  padding: 0.7rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  z-index: 9999;
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(7, 94, 84, 0.6);
+  will-change: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.whatsapp:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.2rem);
+}
+.whatsapp svg {
+  color: white;
+  height: 100%;
+  width: 100%;
+}

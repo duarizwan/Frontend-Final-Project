@@ -1,0 +1,144 @@
+/* Footer Styling */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.order-bg {
+  padding: 2rem;
+  padding-top: 8rem;
+  border-radius: 10px;
+  max-width: 50rem;
+  width: 100%;
+}
+.order-bg .order {
+  background-color: #14100d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.order-bg h1 {
+  color: #ff6f61;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.order-bg h2 {
+  color: #e9e6e4;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.order-bg h3 {
+  color: #e9e6e4;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.order-bg label {
+  color: #e9e6e4;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.order-bg input[type=text],
+.order-bg input[type=email],
+.order-bg input[type=tel],
+.order-bg input[type=number],
+.order-bg select,
+.order-bg textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ff6f61;
+  border-radius: 5px;
+  background-color: #2c2a29;
+  color: #e9e6e4;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.order-bg input[type=text]:focus,
+.order-bg input[type=email]:focus,
+.order-bg input[type=tel]:focus,
+.order-bg input[type=number]:focus,
+.order-bg select:focus,
+.order-bg textarea:focus {
+  outline: none;
+  border-color: #ff6f61;
+  background-color: #3a3837;
+}
+.order-bg textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.order-bg .form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.order-bg .form-group div {
+  flex: 1;
+  margin-right: 10px;
+}
+.order-bg .form-group div:last-child {
+  margin-right: 0;
+}
+.order-bg .measurement-section {
+  display: none;
+}
+.order-bg .measurement-section input[type=number] {
+  width: 100%;
+}
+.order-bg .error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  display: none;
+}
+.order-bg .error-input {
+  border-color: red;
+  background-color: #3a3837;
+}
+.order-bg .radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.order-bg .radio-group label {
+  margin-right: 15px;
+  color: #e9e6e4;
+}
+.order-bg .calendar-group {
+  margin-bottom: 15px;
+}
+.order-bg .calendar-group input[type=datetime-local] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ff6f61;
+  border-radius: 5px;
+  background-color: #2c2a29;
+  color: #e9e6e4;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.order-bg .calendar-group input[type=datetime-local]:focus {
+  outline: none;
+  border-color: #ff6f61;
+  background-color: #3a3837;
+}
+.order-bg button[type=submit] {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.order-bg button[type=submit]:hover {
+  background-color: #ff412e;
+}

@@ -1,0 +1,343 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #f0f0f0;
+  --text-color: black;
+  --light-gray: #777;
+  --dark-gray: #333;
+  --white-color: #ffffff;
+  --background-color: #f4f4f4;
+  --font-family: "Arial", sans-serif;
+  --font-large: 3rem;
+  --font-medium: 1.25rem;
+  --font-small: 1rem;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-weight: bold;
+  --button-color: black;
+  --footer-color: black;
+  --bg-light: rgba(0, 0, 0, 0.4);
+  --bg-dark: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  width: 100%;
+}
+
+/* body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+} */
+
+button:hover,
+.btn1:hover,
+.card-button:hover,
+.contact-btn:hover {
+  background-color: #444;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials-slider {
+  min-height: 200px;
+  position: relative;
+}
+
+.slider-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-controls .prev,
+.slider-controls .next {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.slider-controls .prev:hover,
+.slider-controls .next:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-container .direct-link {
+  display: none;
+}
+
+/* Experience Quality Section */
+.info-section {
+  margin: 50px 0;
+}
+
+@keyframes zoomInOut {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shadowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  max-width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-family: var(--font-family);
+  font-size: var(--font-small);
+}
+
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.card-button:hover {
+  background-color: #444;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content,
+.card {
+  animation: fadeIn 0.9s ease-in;
+}
+
+
+
+
+
+.contact-section {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-container h2 {
+  font-size: var(--font-large);
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: var(--font-small);
+  color: var(--dark-gray);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.contact-btn:hover {
+  background-color: var(--dark-gray);
+}
+
+.direct-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.direct-link a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.direct-link a:hover {
+  color: var(--on-hover);
+}
+
+.logo-space {
+  grid-column: span 4;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quick-links {
+  padding-left: 7em;
+}
+
+.quick-links ul {
+  list-style-type: none;
+}
+
+.quick-links ul li {
+  margin: 5px 0;
+}
+
+.quick-links ul li a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 0.95em;
+  transition: color 0.3s;
+}
+
+.quick-links ul li a:hover {
+  color: var(--dark-gray);
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: var(--light-gray);
+  font-size: 0.95em;
+}
+
+.contact-form {
+  max-width: 20em;
+}
+
+.contact-form p {
+  margin-bottom: 10px;
+  color: var(--light-gray);
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.contact-form input[type="email"] {
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: rgb(195, 195, 195);
+}
+
+/* Google Map Container */
+.map-container {
+  grid-column: span 4;
+  height: 10em;
+  border-radius: 8px;
+  overflow: hidden;
+}
